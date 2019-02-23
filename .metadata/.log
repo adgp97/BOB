@@ -1,0 +1,674 @@
+!SESSION 2019-02-22 17:16:25.897 -----------------------------------------------
+eclipse.buildId=I20070613-1755
+java.version=1.6.0_15
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:32.419
+!MESSAGE NLS missing message: ContentTypes_errorDialogAlreadyExists in: org.eclipse.ui.internal.messages
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2019-02-22 17:16:38.144
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6\eclipse\../MCU/lib/wizard_data/mqx/4.0/arm' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2019-02-22 17:16:38.153
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6\eclipse\../MCU/lib/wizard_data/mqx/4.0/ppc' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2019-02-22 17:16:38.153
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6\eclipse\../MCU/lib/wizard_data/mqx/4.0/patches' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2019-02-22 17:16:38.397
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6\eclipse\../MCU/lib/wizard_data/mqx/4.1/arm' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2019-02-22 17:16:38.397
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6\eclipse\../MCU/lib/wizard_data/mqx/4.1/ppc' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2019-02-22 17:16:38.401
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6\eclipse\../MCU/lib/wizard_data/mqx/4.1/patches' does not exist
+
+!ENTRY com.freescale.processorexpert.core 1 0 2019-02-22 17:16:39.469
+!MESSAGE Plugin com.freescale.processorexpert.core.service ProcessorExpertServiceProvider
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.269
+!MESSAGE NLS unused message: NewProjectCreator_coreException1 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.273
+!MESSAGE NLS unused message: NewProjectCreator_coreException2 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.273
+!MESSAGE NLS unused message: NewProjectCreator_coreException3 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.273
+!MESSAGE NLS unused message: NewProjectCreator_exception1 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.273
+!MESSAGE NLS unused message: NewProjectCreator_wizardException1 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.273
+!MESSAGE NLS unused message: NewProjectCreator_wizardException2 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.273
+!MESSAGE NLS unused message: NewProjectCreator_wizardException3 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.273
+!MESSAGE NLS unused message: NewProjectCreator_wizardException4 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.273
+!MESSAGE NLS unused message: NewProjectCreator_wizardException5 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.277
+!MESSAGE NLS unused message: NewProjectCreator_wizardException6 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.277
+!MESSAGE NLS unused message: NewProjectCreator_wizardException7 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.277
+!MESSAGE NLS unused message: NewProjectCreator_wizardException8 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.277
+!MESSAGE NLS unused message: NewProjectCreator_wizardException9 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.277
+!MESSAGE NLS unused message: NewProjectCreator_logError1 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.277
+!MESSAGE NLS unused message: NewProjectCreator_logError2 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.277
+!MESSAGE NLS unused message: NewProjectCreator_logError3 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.281
+!MESSAGE NLS unused message: NewProjectCreator_logError4 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.281
+!MESSAGE NLS unused message: NewProjectCreator_multiProjType in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.281
+!MESSAGE NLS unused message: NewProjectCreator_typeNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.281
+!MESSAGE NLS unused message: NewProjectCreator_saveOptions in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.281
+!MESSAGE NLS unused message: NewProjectCreator_cantLocateType in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.281
+!MESSAGE NLS unused message: NewProjectCreator_addNature in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.285
+!MESSAGE NLS unused message: NewProjectCreator_addBuilder in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.285
+!MESSAGE NLS unused message: NewProjectCreator_settingNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.285
+!MESSAGE NLS unused message: NewProjectCreator_optionNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.285
+!MESSAGE NLS unused message: NewProjectCreator_unknownOption in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.285
+!MESSAGE NLS unused message: NewProjectCreator_configNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.285
+!MESSAGE NLS unused message: NewProjectCreator_varContainsOpenBrace in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.285
+!MESSAGE NLS unused message: NewProjectCreator_endlessVarLoop in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.289
+!MESSAGE NLS unused message: NewProjectCreator_userFilesNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.289
+!MESSAGE NLS unused message: NewProjectCreator_warningTitleFilesNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.289
+!MESSAGE NLS unused message: ExtensionLoader_loadexception in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.289
+!MESSAGE NLS unused message: ExtensionLoader_wizardException in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.289
+!MESSAGE NLS unused message: ExtensionLoader_unknown in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.289
+!MESSAGE NLS unused message: ExtensionLoader_illElement in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.289
+!MESSAGE NLS unused message: CWWizard_windowTitle in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.293
+!MESSAGE NLS unused message: CWWizard_description in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.293
+!MESSAGE NLS unused message: CWWizard_pageTitle in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.293
+!MESSAGE NLS unused message: CWWizard_pageDescription in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.293
+!MESSAGE NLS unused message: CWWizard_errorTitle in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.293
+!MESSAGE NLS unused message: CWWizard_errorMsg in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.293
+!MESSAGE NLS unused message: CWWizard_classicImporter_pageTitle in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.293
+!MESSAGE NLS unused message: CWWizard_classicImporter_pageDescription in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.297
+!MESSAGE NLS unused message: WizardInfo_wizardException0 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.297
+!MESSAGE NLS unused message: WizardInfo_wizardException1 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.297
+!MESSAGE NLS unused message: ApplySetting_noChildFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.297
+!MESSAGE NLS unused message: ApplySetting_attrNotAllowed in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.297
+!MESSAGE NLS unused message: ApplySetting_childNotAllowed in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.297
+!MESSAGE NLS unused message: ApplySetting_attrNotSpecified in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.297
+!MESSAGE NLS unused message: ApplySetting_errValueType in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.301
+!MESSAGE NLS unused message: ApplySetting_illSettingType in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.301
+!MESSAGE NLS unused message: ApplySetting_illSettingMode in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.301
+!MESSAGE NLS unused message: ProjectNamePage_stepFormat in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.301
+!MESSAGE NLS unused message: ProjectNamePage_collisionWarn in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.301
+!MESSAGE NLS unused message: ProjectName_error in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:16:40.301
+!MESSAGE NLS unused message: ProjectLocation_error in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-02-22 17:16:41.840
+!MESSAGE No repository found at jar:file:E:%5CCW%20for%20MCU%2010.6%5Ccom.freescale.mcu10_6.coldfire.updatesite.zip!/.
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.492
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.architecture.kinetis_k
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.500
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.architecture.kinetis_l
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.500
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.architecture.kinetis_e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.504
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.architecture.kinetis_m
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.504
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.s12z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.504
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.dsc
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.504
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.mpc56xx
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.504
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.px
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.504
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.508
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.508
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.508
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.508
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.516
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.516
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:16:42.516
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v4e
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-02-22 17:16:42.864
+!MESSAGE No repository found at jar:file:E:%5CCW%20for%20MCU%2010.6%5Ccom.freescale.mcu10_6.hcs08_rs08.updatesite.zip!/.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-02-22 17:16:45.383
+!MESSAGE Connection to http://freescale.com/lgfiles/updates/Eclipse/MCU10_6/com.freescale.mcu.updatesite/p2.index failed on Received fatal alert: protocol_version. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Received fatal alert: protocol_version
+	at com.sun.net.ssl.internal.ssl.Alerts.getSSLException(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.Alerts.getSSLException(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.recvAlert(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.writeRecord(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.AppOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at org.apache.commons.httpclient.HttpConnection.flushRequestOutputStream(HttpConnection.java:828)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.flushRequestOutputStream(MultiThreadedHttpConnectionManager.java:1565)
+	at org.apache.commons.httpclient.HttpMethodBase.writeRequest(HttpMethodBase.java:2116)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1096)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer$GzipGetMethod.execute(HttpClientRetrieveFileTransfer.java:120)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1129)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:699)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:879)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:570)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:422)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:355)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:101)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:156)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:721)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:640)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:150)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:128)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:72)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2019-02-22 17:16:47.250
+!MESSAGE Unable to read repository at file:/C:/Freescale/CW MCU v10.6/eclipse/p2/org.eclipse.equinox.p2.repository/cache/content1605313431.jar.
+!STACK 0
+java.io.IOException: Premature end of file.
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryIO$Parser.parse(MetadataRepositoryIO.java:215)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryIO.read(MetadataRepositoryIO.java:63)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:758)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:150)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:128)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:72)
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.254
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.hasPermanent.dualCore.homogeneous.config
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.255
+!MESSAGE Unknown condition ID: com.processorexpert.condition.device.pinsettings.present
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.255
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.hc08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.275
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_EXTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.275
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_EXTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.579
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_CONSOLE_EXTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.579
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.arm.ID_TARGET_RAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.579
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.arm.ID_TARGET_FLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.579
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_INTERNAL_FLASH_SDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.579
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_INTERNAL_FLASH_LDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.579
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_EXTERNAL_RAM_SDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.583
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_EXTERNAL_RAM_LDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.583
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_SIMULATOR
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.583
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.ID_TARGET_INTERNAL_RAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:16.583
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.ID_TARGET_INTERNAL_FLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.507
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copytoproject.cfv1
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.507
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.dontcopytoproject
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.507
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.abs
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.511
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copyelf.pa
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.511
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.arm
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.511
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.dsc
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.511
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.s12z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.511
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.bb.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.511
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.kd.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.511
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.app.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2019-02-22 17:17:17.515
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.flt
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-22 17:17:21.030
+!MESSAGE Indexed 'BOB' (1 sources, 5 headers) in 0.94 sec: 62 declarations; 98 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:17:52.746
+!MESSAGE NLS unused message: trace_trigger_dv_error_title in: com.freescale.sa.mcu.analysispoints.nls.ui
+
+!ENTRY org.eclipse.osgi 2 1 2019-02-22 17:17:52.750
+!MESSAGE NLS unused message: trace_trigger_dv_error_message in: com.freescale.sa.mcu.analysispoints.nls.ui
+
+!ENTRY org.eclipse.jface 2 0 2019-02-22 17:17:53.028
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-22 17:17:53.028
+!MESSAGE A conflict occurred for ALT+CTRL+I:
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@145b1bd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@145b1bd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-22 17:17:53.028
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.MakeHandlersGo@97f1ff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.MakeHandlersGo@97f1ff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-22 17:17:53.028
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@190ae17,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@190ae17,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-22 17:17:53.028
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1957b45,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1957b45,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-22 17:17:53.028
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@d00e99,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@d00e99,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-22 17:17:53.028
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16e6fa3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16e6fa3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-22 17:17:53.028
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16354d0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16354d0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-22 17:17:53.028
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@554c68,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@554c68,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-22 17:17:53.028
+!MESSAGE A conflict occurred for CTRL+SHIFT+H:
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@b410a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@b410a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY org.eclipse.equinox.event 4 0 2019-02-22 17:37:38.222
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/REMOVE] to handler org.eclipse.e4.ui.services.internal.events.UIEventHandler@111cdd6
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.restore(MinMaxAddon.java:578)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon$8.handleEvent(MinMaxAddon.java:395)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:200)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4702)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:187)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.remove(NotifyingListImpl.java:725)
+	at org.eclipse.emf.common.util.AbstractEList.remove(AbstractEList.java:460)
+	at org.eclipse.ui.internal.WorkbenchPage.setEditorAreaVisible(WorkbenchPage.java:3513)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2995)
+	at org.eclipse.ui.internal.WorkbenchPage.access$22(WorkbenchPage.java:2969)
+	at org.eclipse.ui.internal.WorkbenchPage$8.run(WorkbenchPage.java:2951)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2947)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2911)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2902)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:666)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:625)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:1218)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:1159)
+	at com.processorexpert.ui.editors.EditorHelper.openEditor(EditorHelper.java:116)
+	at com.processorexpert.ui.ViewGeneratedCode.viewGeneratedCode(ViewGeneratedCode.java:143)
+	at com.processorexpert.ui.projectpanel.actions.ViewCode.run(ViewCode.java:170)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4184)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:630)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:585)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1439)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-22 17:52:45.191
+!MESSAGE Indexed 'prelab1' (10 sources, 15 headers) in 1.79 sec: 3,487 declarations; 2,854 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-22 18:03:12.699
+!MESSAGE Indexed 'prelab1' (10 sources, 15 headers) in 1.47 sec: 3,487 declarations; 2,854 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.freescale.core.debugger.cdt 4 16777218 2019-02-22 19:10:37.751
+!MESSAGE Error launching BOB_FLASH_PnE U-MultiLink
+!STACK 1
+org.eclipse.core.runtime.CoreException: HC/RS/S12Z GDI Protocol Adapter : Can't connect. The Debugger can not connect to the P&E device
+	at com.freescale.cdt.debug.cw.core.DebugErrorUtils.handleDebugCoreError(DebugErrorUtils.java:281)
+	at com.freescale.cdt.launch.cw.DownloadLaunchDelegate.cwDoLaunch(DownloadLaunchDelegate.java:542)
+	at com.freescale.cdt.launch.cw.BaseLaunchDelegate.doLaunch(BaseLaunchDelegate.java:203)
+	at com.freescale.cdt.launch.cw.DownloadLaunchDelegate.launchDebug(DownloadLaunchDelegate.java:276)
+	at com.freescale.cdt.launch.cw.DownloadLaunchDelegate.launch(DownloadLaunchDelegate.java:123)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 com.freescale.core.debugger.cdt 4 16777218 2019-02-22 19:10:37.768
+!MESSAGE HC/RS/S12Z GDI Protocol Adapter : Can't connect. The Debugger can not connect to the P&E device
+
+!ENTRY org.eclipse.cdt.ui 4 0 2019-02-22 19:38:53.082
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element main.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:490)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:572)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:367)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:92)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:77)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:358)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2019-02-22 19:38:53.082
+!MESSAGE Element main.c does not exist.

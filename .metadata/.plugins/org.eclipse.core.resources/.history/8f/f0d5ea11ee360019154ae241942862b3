@@ -1,0 +1,31 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="2">
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Documentation/BOB_Settings.xml" FileDate="2019-02-22, 17:17:29" FileAge="1550872049487" FileType="3072" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2019-02-22, 17:17:29" FileAge="1550872049471" FileType="45637" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.prm" FileDate="2019-02-22, 17:17:29" FileAge="1550872049439" FileType="8" CompNumb="4" />
+      <File Name="Sources/Events.h" FileDate="2019-02-22, 17:17:29" FileAge="1550872049423" FileType="131328" />
+      <File Name="Documentation/BOB_SIGNALS.txt" FileDate="2019-02-22, 17:17:29" FileAge="1550872049475" FileType="3072" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2019-02-22, 17:17:29" FileAge="1550872049435" FileType="45637" CompNumb="4" />
+      <File Name="Sources/Events.c" FileDate="2019-02-22, 17:17:29" FileAge="1550872049399" FileType="131328" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2019-02-22, 17:17:29" FileAge="1550872049447" FileType="45637" CompNumb="4" />
+      <File Name="Documentation/BOB.txt" FileDate="2019-02-22, 17:17:29" FileAge="1550872049495" FileType="3072" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2019-02-22, 17:17:29" FileAge="1550872049459" FileType="45637" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2019-02-22, 17:17:29" FileAge="1550872049463" FileType="45637" />
+      <File Name="Sources/main.c" FileDate="2019-02-22, 17:17:29" FileAge="1550872049451" FileType="128" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2019-02-22, 17:17:29" FileAge="1550872049443" FileType="45637" CompNumb="4" />
+      <File Name="Generated_Code/IO_Map.c" FileDate="2019-02-22, 17:17:29" FileAge="1550872049451" FileType="45637" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2019-02-22, 17:17:29" FileAge="1550872049467" FileType="45637" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>1</CodeGenReference>
+</CodeGenerationInfo>
