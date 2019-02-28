@@ -7,7 +7,7 @@
 **     Version     : Component 01.003, Driver 01.40, CPU db: 3.00.067
 **     Datasheet   : MC9S08QE128RM Rev. 2 6/2007
 **     Compiler    : CodeWarrior HCS08 C Compiler
-**     Date/Time   : 2019-02-22, 21:30, # CodeGen: 12
+**     Date/Time   : 2019-02-27, 21:09, # CodeGen: 19
 **     Abstract    :
 **         This component "MC9S08QE128_80" contains initialization 
 **         of the CPU and provides basic methods and events for 
@@ -67,11 +67,13 @@
 
 #pragma MESSAGE DISABLE C4002 /* WARNING C4002: Result not used is ignored */
 
+#include "AD1.h"
 #include "AS1.h"
 #include "PTA2.h"
 #include "PTA3.h"
 #include "PTD2.h"
 #include "PTD3.h"
+#include "TI1.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -270,16 +272,18 @@ void PE_low_level_init(void)
   /* SCGC2: DBG=1,FLS=1,IRQ=1,KBI=1,ACMP=1,RTC=1,SPI2=1,SPI1=1 */
   setReg8(SCGC2, 0xFFU);                
   /* Common initialization of the CPU registers */
+  /* APCTL1: ADPC1=1,ADPC0=1 */
+  setReg8Bits(APCTL1, 0x03U);           
   /* PTBDD: PTBDD1=1,PTBDD0=0 */
   clrSetReg8Bits(PTBDD, 0x01U, 0x02U);  
   /* PTBD: PTBD1=1 */
   setReg8Bits(PTBD, 0x02U);             
-  /* PTAPE: PTAPE3=0,PTAPE2=0 */
-  clrReg8Bits(PTAPE, 0x0CU);            
+  /* PTAPE: PTAPE3=1,PTAPE2=1 */
+  setReg8Bits(PTAPE, 0x0CU);            
   /* PTADD: PTADD3=0,PTADD2=0 */
   clrReg8Bits(PTADD, 0x0CU);            
-  /* PTDPE: PTDPE3=0,PTDPE2=0 */
-  clrReg8Bits(PTDPE, 0x0CU);            
+  /* PTDPE: PTDPE3=1,PTDPE2=1 */
+  setReg8Bits(PTDPE, 0x0CU);            
   /* PTDDD: PTDDD3=0,PTDDD2=0 */
   clrReg8Bits(PTDDD, 0x0CU);            
   /* PTASE: PTASE7=0,PTASE6=0,PTASE4=0,PTASE3=0,PTASE2=0,PTASE1=0,PTASE0=0 */
@@ -319,12 +323,16 @@ void PE_low_level_init(void)
   /* PTJDS: PTJDS7=1,PTJDS6=1,PTJDS5=1,PTJDS4=1,PTJDS3=1,PTJDS2=1,PTJDS1=1,PTJDS0=1 */
   setReg8(PTJDS, 0xFFU);                
   /* ### Shared modules init code ... */
+  /* ###  "AD1" init code ... */
+  AD1_Init();
   /* ### Asynchro serial "AS1" init code ... */
   AS1_Init();
   /* ### BitIO "PTA2" init code ... */
   /* ### BitIO "PTA3" init code ... */
   /* ### BitIO "PTD2" init code ... */
   /* ### BitIO "PTD3" init code ... */
+  /* ### TimerInt "TI1" init code ... */
+  TI1_Init();
   CCR_lock = (byte)0;
   __EI();                              /* Enable interrupts */
 }

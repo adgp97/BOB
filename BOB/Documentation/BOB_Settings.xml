@@ -828,7 +828,7 @@ asm(BGND);
     </CompilerProperties>
   </CPU_Bean>
   <Bean name="AD1" type="ADC">
-    <Enabled v="N" />
+    <Enabled v="Y" />
     <Properties>
       <Component_name v="AD1" />
       <A_D_converter v="ADC" />
@@ -842,7 +842,7 @@ asm(BGND);
           <A_D_channel__pin_ v="PTA0_KBI1P0_TPM1CH0_ADP0_ACMP1PLUS" />
         </group>
         <group name="Channel1">
-          <A_D_channel__pin_ v="PTA2_KBI1P2_SDA1_ADP2" />
+          <A_D_channel__pin_ v="PTA1_KBI1P1_TPM2CH0_ADP1_ACMP1MINUS" />
         </group>
       </list>
       <A_D_resolution v="12 bits" />
@@ -1009,12 +1009,7 @@ asm(BGND);
     <Properties>
       <Component_name v="PTA2" />
       <Pin_for_I_O v="PTA2_KBI1P2_SDA1_ADP2" />
-      <Pull_resistor sel_value="no pull resistor">
-        
-autoselected pull
-
-        <EmptySection_DummyValue />
-      </Pull_resistor>
+      <Pull_resistor v="pull up" />
       <Open_drain sel_value="The settings is irrelevant for input direction">
         
 push-pull
@@ -1051,12 +1046,7 @@ push-pull
     <Properties>
       <Component_name v="PTA3" />
       <Pin_for_I_O v="PTA3_KBI1P3_SCL1_ADP3" />
-      <Pull_resistor sel_value="no pull resistor">
-        
-autoselected pull
-
-        <EmptySection_DummyValue />
-      </Pull_resistor>
+      <Pull_resistor v="pull up" />
       <Open_drain sel_value="The settings is irrelevant for input direction">
         
 push-pull
@@ -1093,12 +1083,7 @@ push-pull
     <Properties>
       <Component_name v="PTD2" />
       <Pin_for_I_O v="PTD2_KBI2P2_MISO2" />
-      <Pull_resistor sel_value="no pull resistor">
-        
-autoselected pull
-
-        <EmptySection_DummyValue />
-      </Pull_resistor>
+      <Pull_resistor v="pull up" />
       <Open_drain sel_value="The settings is irrelevant for input direction">
         
 push-pull
@@ -1135,12 +1120,7 @@ push-pull
     <Properties>
       <Component_name v="PTD3" />
       <Pin_for_I_O v="PTD3_KBI2P3_SS2" />
-      <Pull_resistor sel_value="no pull resistor">
-        
-autoselected pull
-
-        <EmptySection_DummyValue />
-      </Pull_resistor>
+      <Pull_resistor v="pull up" />
       <Open_drain sel_value="The settings is irrelevant for input direction">
         
 push-pull
@@ -1170,6 +1150,55 @@ push-pull
     </Methods>
     <Events>
       <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="TI1" type="TimerInt">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="TI1" />
+      <Periodic_interrupt_source v="RTCmod" />
+      <Counter v="RTC" />
+      <boolgroup name="Interrupt service/event" v="Enabled">
+        <Interrupt v="Vrtc" />
+        <Interrupt_priority v="medium priority" />
+      </boolgroup>
+      <Interrupt_period v="0.5 ms" />
+      <Same_period_in_modes v="yes" />
+      <Component_uses_entire_timer v="no" />
+      <group name="Initialization">
+        <Enabled_in_init__code v="yes" />
+        <Events_enabled_in_init_ v="yes" />
+      </group>
+      <group name="CPU clock/speed selection">
+        <High_speed_mode v="This component enabled" />
+        <Low_speed_mode v="This component disabled" />
+        <Slow_speed_mode v="This component disabled" />
+      </group>
+    </Properties>
+    <Methods>
+      <Enable v="generate code" />
+      <Disable v="don&amp;apos;t generate code" />
+      <EnableEvent v="don&amp;apos;t generate code" />
+      <DisableEvent v="don&amp;apos;t generate code" />
+      <SetPeriodMode v="don&amp;apos;t generate code" />
+      <SetPeriodTicks16 v="don&amp;apos;t generate code" />
+      <SetPeriodTicks32 v="don&amp;apos;t generate code" />
+      <SetPeriodUS v="don&amp;apos;t generate code" />
+      <SetPeriodMS v="don&amp;apos;t generate code" />
+      <SetPeriodSec v="don&amp;apos;t generate code" />
+      <SetPeriodReal v="don&amp;apos;t generate code" />
+      <SetFreqHz v="don&amp;apos;t generate code" />
+      <SetFreqkHz v="don&amp;apos;t generate code" />
+      <SetFreqMHz v="don&amp;apos;t generate code" />
+    </Methods>
+    <Events>
+      <Event_module_name v="Events" />
+      <event name="BeforeNewSpeed" v="don&amp;apos;t generate code" />
+      <event name="AfterNewSpeed" v="don&amp;apos;t generate code" />
+      <event name="OnInterrupt" v="generate code">
+        <Event_procedure_name v="TI1_OnInterrupt" />
+        <Priority v="same as interrupt" />
+      </event>
     </Events>
   </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>

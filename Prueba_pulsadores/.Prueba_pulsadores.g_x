@@ -1,0 +1,47 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="2">
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Generated_Code/PTD2.h" FileDate="2019-02-22, 22:20:30" FileAge="1550890230521" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2019-02-22, 21:51:07" FileAge="1550888467283" FileType="45637" />
+      <File Name="Documentation/Prueba_pulsadores_SIGNALS.txt" FileDate="2019-02-22, 22:42:32" FileAge="1550891552251" FileType="3072" />
+      <File Name="Generated_Code/PTA3.h" FileDate="2019-02-22, 22:42:32" FileAge="1550891552167" FileType="45637" CompNumb="11" />
+      <File Name="Generated_Code/PTD2.c" FileDate="2019-02-22, 22:20:30" FileAge="1550890230519" FileType="45637" CompNumb="8" />
+      <File Name="Documentation/Prueba_pulsadores.txt" FileDate="2019-02-22, 22:42:32" FileAge="1550891552329" FileType="3072" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2019-02-22, 22:42:32" FileAge="1550891552217" FileType="45637" CompNumb="4" />
+      <File Name="Generated_Code/PTA3.c" FileDate="2019-02-22, 22:42:32" FileAge="1550891552163" FileType="45637" CompNumb="11" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2019-02-22, 21:51:07" FileAge="1550888467275" FileType="45637" />
+      <File Name="Sources/Events.h" FileDate="2019-02-22, 22:42:32" FileAge="1550891552230" FileType="131328" />
+      <File Name="Generated_Code/PTC1.h" FileDate="2019-02-22, 22:42:32" FileAge="1550891552156" FileType="45637" CompNumb="12" />
+      <File Name="Generated_Code/IO_Map.c" FileDate="2019-02-22, 21:51:07" FileAge="1550888467271" FileType="45637" />
+      <File Name="Sources/main.c" FileDate="2019-02-22, 22:42:32" FileAge="1550891552190" FileType="128" />
+      <File Name="Sources/Events.c" FileDate="2019-02-22, 21:51:07" FileAge="1550888467240" FileType="131328" />
+      <File Name="Generated_Code/PTC3.h" FileDate="2019-02-22, 22:42:32" FileAge="1550891552118" FileType="45637" CompNumb="15" />
+      <File Name="Generated_Code/PTC1.c" FileDate="2019-02-22, 22:42:32" FileAge="1550891552154" FileType="45637" CompNumb="12" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2019-02-22, 21:51:07" FileAge="1550888467279" FileType="45637" />
+      <File Name="Generated_Code/PTC3.c" FileDate="2019-02-22, 22:42:32" FileAge="1550891552113" FileType="45637" CompNumb="15" />
+      <File Name="Generated_Code/PTA2.h" FileDate="2019-02-22, 22:42:32" FileAge="1550891552179" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/PTD3.h" FileDate="2019-02-22, 22:42:32" FileAge="1550891552128" FileType="45637" CompNumb="14" />
+      <File Name="Generated_Code/PTD3.c" FileDate="2019-02-22, 22:42:32" FileAge="1550891552123" FileType="45637" CompNumb="14" />
+      <File Name="Generated_Code/PTA2.c" FileDate="2019-02-22, 22:42:32" FileAge="1550891552176" FileType="45637" CompNumb="10" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.prm" FileDate="2019-02-22, 21:51:07" FileAge="1550888467252" FileType="8" CompNumb="4" />
+      <File Name="Documentation/Prueba_pulsadores_Settings.xml" FileDate="2019-02-22, 22:42:32" FileAge="1550891552313" FileType="3072" />
+      <File Name="Generated_Code/PTC0.h" FileDate="2019-02-22, 22:30:46" FileAge="1550890846068" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2019-02-22, 21:51:07" FileAge="1550888467287" FileType="45637" />
+      <File Name="Generated_Code/PTC2.h" FileDate="2019-02-22, 22:42:32" FileAge="1550891552146" FileType="45637" CompNumb="13" />
+      <File Name="Generated_Code/PTC0.c" FileDate="2019-02-22, 22:30:46" FileAge="1550890846087" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2019-02-22, 22:30:46" FileAge="1550890846103" FileType="45637" CompNumb="4" />
+      <File Name="Generated_Code/PTC2.c" FileDate="2019-02-22, 22:42:32" FileAge="1550891552142" FileType="45637" CompNumb="13" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2019-02-22, 22:42:32" FileAge="1550891552202" FileType="45637" CompNumb="4" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>8</CodeGenReference>
+</CodeGenerationInfo>

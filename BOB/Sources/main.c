@@ -30,10 +30,12 @@
 /* Including needed modules to compile this module/procedure */
 #include "Cpu.h"
 #include "Events.h"
+#include "AD1.h"
 #include "AS1.h"
 #include "PTA3.h"
 #include "PTD2.h"
 #include "PTD3.h"
+#include "TI1.h"
 #include "PTA2.h"
 /* Include shared modules, which are used for whole project */
 #include "PE_Types.h"
@@ -48,6 +50,7 @@ void main(void)
   /* Write your local variable definition here */
 	
 	char trama[4], A[2], B[2];
+	int flag = 0;
 	//bool D0 = 0,D1 = 1,D2 = 0,D3 = 1;
 	word ptr;
 
@@ -60,7 +63,9 @@ void main(void)
   
   for(;;){
 	  
-	  /*//Adquisición de señales analógicas
+	  //Condicion para que muestree a 2 KHz
+	  if(flag != 0){
+	      //Adquisición de señales analógicas
 	      //Recordar activar el ADC antes de descomentar
 	  	  AD1_Measure(TRUE);
 	  	  AD1_GetChanValue16(0,A); //Canal 0 
@@ -71,13 +76,14 @@ void main(void)
 	  	  A[0] = A[0]>>4;
 	  	  B[1] = B[1]>>4 | B[0]<<4;
 	  	  B[0] = B[0]>>4;	  	 
-	  */	  
 	  	  
-	  	  //Valores fijos para hacer pruebas
-	      A[0] = (char )10; 
-	      A[1] = (char )120;
-	      B[0] = (char )3;
-	      B[1] = (char )94;
+	  	  
+	  	  /*//Valores fijos para hacer pruebas
+	      A[0] = (char )0; 
+	      A[1] = (char )0;
+	      B[0] = (char )0;
+	      B[1] = (char )0;
+	  	  */
 	  	  
 	  	  //Entramado
 	  	  trama[0] = (A[0] << 2 | A[1] >> 6) & 0b00111111;
@@ -114,8 +120,9 @@ void main(void)
 	  
 	      AS1_SendBlock(trama,sizeof(trama),&ptr);
 	  	  Cpu_Delay100US(10000);
+	  	  flag = 0;
 	  	  
-	  
+	  }
 	  
 	  
   }
