@@ -119,7 +119,7 @@ void main(void)
 	  	}
 	  
 	      AS1_SendBlock(trama,sizeof(trama),&ptr);
-	  	  Cpu_Delay100US(10000);
+	  	  //Cpu_Delay100US(10000);
 	  	  flag = 0;
 	  	  
 	  }

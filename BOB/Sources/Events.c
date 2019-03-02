@@ -31,6 +31,8 @@
 #include "Cpu.h"
 #include "Events.h"
 
+extern flag;
+
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
 /*
@@ -123,11 +125,7 @@ void  AS1_OnFreeTxBuf(void)
 void TI1_OnInterrupt(void)
 {
   /* Write your code here ... */
-	
-	int flag = 0;
-	flag = !flag;
-
-
+	flag = 1;
 }
 
 /*

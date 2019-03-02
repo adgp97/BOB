@@ -25,20 +25,20 @@ Vectors_c.obj                           Model: SMALL,         Lang: ANSI-C
 *********************************************************************************************
 STARTUP SECTION
 ---------------------------------------------------------------------------------------------
-Entry point: 0x20A0 (_EntryPoint)
-_startupData is allocated at 0x2165 and uses 6 Bytes
+Entry point: 0x2084 (_EntryPoint)
+_startupData is allocated at 0x2149 and uses 6 Bytes
 extern struct _tagStartup {
   unsigned nofZeroOut     1
-  _Range   pZeroOut       0xA0     23
-  _Copy    *toCopyDownBeg 0x255C
+  _Range   pZeroOut       0xA0     25
+  _Copy    *toCopyDownBeg 0x2540
 } _startupData;
 
 *********************************************************************************************
 SECTION-ALLOCATION SECTION
 Section Name                    Size  Type     From       To       Segment
 ---------------------------------------------------------------------------------------------
-.text                            995     R     0x2177     0x2559   ROM
-.rodata                            2     R     0x255A     0x255B   ROM
+.text                            995     R     0x215B     0x253D   ROM
+.rodata                            2     R     0x253E     0x253F   ROM
 .abs_section_ffbd                  1     R     0xFFBD     0xFFBD   .absSeg0
 .abs_section_ffbf                  1     R     0xFFBF     0xFFBF   .absSeg1
 .abs_section_0                     1   N/I        0x0        0x0   .absSeg2
@@ -222,16 +222,16 @@ Section Name                    Size  Type     From       To       Segment
 .abs_section_1816                  2   N/I     0x1816     0x1817   .absSeg180
 .abs_section_1870                  2   N/I     0x1870     0x1871   .absSeg181
 .abs_section_ffc0                 64     R     0xFFC0     0xFFFF   .absSeg182
-.bss                              16   R/W       0xA0       0xAF   RAM
-.startData                        18     R     0x2165     0x2176   ROM
-.init                            229     R     0x2080     0x2164   ROM
-.common                            7   R/W       0xB0       0xB6   RAM
-.stack                           512   R/W       0xB7      0x2B6   RAM
-.copy                              2     R     0x255C     0x255D   ROM
+.bss                              18   R/W       0xA0       0xB1   RAM
+.startData                        18     R     0x2149     0x215A   ROM
+.init                            201     R     0x2080     0x2148   ROM
+.common                            7   R/W       0xB2       0xB8   RAM
+.stack                           512   R/W       0xB9      0x2B8   RAM
+.copy                              2     R     0x2540     0x2541   ROM
 
 Summary of section sizes per section type:
-READ_ONLY (R):         520 (dec:     1312)
-READ_WRITE (R/W):      217 (dec:      535)
+READ_ONLY (R):         504 (dec:     1284)
+READ_WRITE (R/W):      219 (dec:      537)
 NO_INIT (N/I):          CF (dec:      207)
 
 *********************************************************************************************
@@ -245,66 +245,66 @@ OBJECT-ALLOCATION SECTION
 ---------------------------------------------------------------------------------------------
 MODULE:                 -- Events_c.obj --
 - PROCEDURES:
-     AS1_OnError                               2177       1       1       2   .text       
-     AS1_OnRxChar                              2178       1       1       1   .text       
-     AS1_OnTxChar                              2179       1       1       1   .text       
-     AS1_OnFreeTxBuf                           217A       1       1       1   .text       
-     TI1_OnInterrupt                           217B       1       1       1   .text       
-     AD1_OnEnd                                 217C       1       1       1   .text       
+     AS1_OnError                               215B       1       1       2   .text       
+     AS1_OnRxChar                              215C       1       1       1   .text       
+     AS1_OnTxChar                              215D       1       1       1   .text       
+     AS1_OnFreeTxBuf                           215E       1       1       1   .text       
+     TI1_OnInterrupt                           215F       7       7       1   .text       
+     AD1_OnEnd                                 2166       1       1       1   .text       
 - VARIABLES:
+     flag                                        A0       2       2       1   .bss        
 MODULE:                 -- main_c.obj --
 - PROCEDURES:
-     main                                      217D      EF     239       4   .text       
+     main                                      2167      E9     233       4   .text       
 - VARIABLES:
 MODULE:                 -- start08_c.obj --
 - PROCEDURES:
-     loadByte                                  226C       E      14       5   .text       
-     Init                                      227A      6D     109       1   .text       
-     _Startup                                  22E7       9       9       1   .text       
+     loadByte                                  2250       E      14       5   .text       
+     Init                                      225E      6D     109       1   .text       
+     _Startup                                  22CB       9       9       1   .text       
 - VARIABLES:
-     _startupData                              2165       6       6       4   .startData  
+     _startupData                              2149       6       6       4   .startData  
 - LABELS:
-     __SEG_END_SSTACK                           2B7       0       0       1               
+     __SEG_END_SSTACK                           2B9       0       0       1               
 MODULE:                 -- AD1_c.obj --
 - PROCEDURES:
-     AD1_Interrupt                             22F0      52      82       1   .text       
-     ClrSumV                                   2342       9       9       1   .text       
-     AD1_HWEnDi                                234B      18      24       1   .text       
-     AD1_Measure                               2363      1E      30       1   .text       
-     AD1_GetChanValue16                        2381      30      48       2   .text       
-     AD1_Init                                  23B1      10      16       1   .text       
+     AD1_Interrupt                             22D4      52      82       1   .text       
+     ClrSumV                                   2326       9       9       1   .text       
+     AD1_HWEnDi                                232F      18      24       1   .text       
+     AD1_Measure                               2347      1E      30       1   .text       
+     AD1_GetChanValue16                        2365      30      48       2   .text       
+     AD1_Init                                  2395      10      16       1   .text       
 - VARIABLES:
-     Channels                                  255A       2       2       2   .rodata     
-     OutFlg                                      A0       1       1       4   .bss        
-     SumChan                                     A1       1       1       8   .bss        
-     ModeFlg                                     A2       1       1       6   .bss        
-     AD1_OutV                                    B0       4       4       8   .common     
+     Channels                                  253E       2       2       2   .rodata     
+     OutFlg                                      A2       1       1       4   .bss        
+     SumChan                                     A3       1       1       8   .bss        
+     ModeFlg                                     A4       1       1       6   .bss        
+     AD1_OutV                                    B2       4       4       8   .common     
 MODULE:                 -- AS1_c.obj --
 - PROCEDURES:
-     AS1_SendBlock                             23C1      A0     160       1   .text       
-     AS1_InterruptRx                           2461      43      67       1   .text       
-     AS1_InterruptTx                           24A4      5A      90       1   .text       
-     AS1_InterruptError                        24FE      11      17       1   .text       
-     AS1_Init                                  250F      2A      42       1   .text       
+     AS1_SendBlock                             23A5      A0     160       1   .text       
+     AS1_InterruptRx                           2445      43      67       1   .text       
+     AS1_InterruptTx                           2488      5A      90       1   .text       
+     AS1_InterruptError                        24E2      11      17       1   .text       
+     AS1_Init                                  24F3      2A      42       1   .text       
 - VARIABLES:
-     SerFlag                                     A3       1       1      11   .bss        
-     BufferRead                                  A4       1       1       1   .bss        
-     OutIndxR                                    A5       1       1       3   .bss        
-     OutIndxW                                    A6       1       1       3   .bss        
-     OutBuffer                                   A7       8       8       2   .bss        
-     OnFreeTxBuf_semaphore                       AF       1       1       5   .bss        
-     AS1_OutLen                                  B4       1       1       6   .common     
+     SerFlag                                     A5       1       1      11   .bss        
+     BufferRead                                  A6       1       1       1   .bss        
+     OutIndxR                                    A7       1       1       3   .bss        
+     OutIndxW                                    A8       1       1       3   .bss        
+     OutBuffer                                   A9       8       8       2   .bss        
+     OnFreeTxBuf_semaphore                       B1       1       1       5   .bss        
+     AS1_OutLen                                  B6       1       1       6   .common     
 MODULE:                 -- Cpu_c.obj --
 - PROCEDURES:
      Cpu_Interrupt                             2080       4       4      26   .init       
-     Cpu_Delay100US                            2084      1C      28       1   .init       
-     _EntryPoint                               20A0      45      69       1   .init       
-     PE_low_level_init                         20E5      80     128       1   .init       
+     _EntryPoint                               2084      45      69       1   .init       
+     PE_low_level_init                         20C9      80     128       1   .init       
 - VARIABLES:
      NVPROT_INIT                               FFBD       1       1       0   .abs_section_ffbd
      NVOPT_INIT                                FFBF       1       1       0   .abs_section_ffbf
-     CCR_reg                                     B5       1       1       2   .common     
-     CCR_lock                                    B6       1       1       5   .common     
+     CCR_reg                                     B7       1       1       2   .common     
+     CCR_lock                                    B8       1       1       5   .common     
 MODULE:                 -- IO_Map_c.obj --
 - PROCEDURES:
 - VARIABLES:
@@ -490,9 +490,9 @@ MODULE:                 -- IO_Map_c.obj --
      _SCI2BD                                   1870       2       2       0   .abs_section_1870
 MODULE:                 -- TI1_c.obj --
 - PROCEDURES:
-     HWEnDi                                    2539       6       6       1   .text       
-     TI1_Init                                  253F       E      14       1   .text       
-     TI1_Interrupt                             254D       D      13       1   .text       
+     HWEnDi                                    251D       6       6       1   .text       
+     TI1_Init                                  2523       E      14       1   .text       
+     TI1_Interrupt                             2531       D      13       1   .text       
 - VARIABLES:
 MODULE:                 -- Vectors_c.obj --
 - PROCEDURES:
@@ -503,12 +503,12 @@ MODULE:                 -- Vectors_c.obj --
 MODULE STATISTIC
   Name                                      Data   Code  Const
 ---------------------------------------------------------------------------------------------
-  Events_c.obj                                 0      6      0
-  main_c.obj                                   0    239      0
+  Events_c.obj                                 2     12      0
+  main_c.obj                                   0    233      0
   start08_c.obj                                0    132      0
   AD1_c.obj                                    7    209      2
   AS1_c.obj                                   14    376      0
-  Cpu_c.obj                                    2    229      2
+  Cpu_c.obj                                    2    201      2
   IO_Map_c.obj                               207      0      0
   TI1_c.obj                                    0     33      0
   Vectors_c.obj                                0      0     64
@@ -523,10 +523,10 @@ SECTION: ".text"
   AD1_Measure AD1_GetChanValue16 AD1_Init AS1_SendBlock AS1_InterruptRx 
   AS1_InterruptTx AS1_InterruptError AS1_Init HWEnDi TI1_Init TI1_Interrupt 
 SECTION: ".bss"
-  OutFlg SumChan ModeFlg SerFlag BufferRead OutIndxR OutIndxW OutBuffer 
+  flag OutFlg SumChan ModeFlg SerFlag BufferRead OutIndxR OutIndxW OutBuffer 
   OnFreeTxBuf_semaphore 
 SECTION: ".init"
-  Cpu_Interrupt Cpu_Delay100US _EntryPoint PE_low_level_init 
+  Cpu_Interrupt _EntryPoint PE_low_level_init 
 SECTION: ".rodata"
   Channels 
 SECTION: ".common"
@@ -1000,19 +1000,20 @@ OBJECT LIST SORTED BY ADDRESS
      _LBP                                        7D       1       1       0   .abs_section_7d
      _LB                                         7E       1       1       0   .abs_section_7e
      _LAPAB                                      7F       1       1       0   .abs_section_7f
-     OutFlg                                      A0       1       1       4   .bss        
-     SumChan                                     A1       1       1       8   .bss        
-     ModeFlg                                     A2       1       1       6   .bss        
-     SerFlag                                     A3       1       1      11   .bss        
-     BufferRead                                  A4       1       1       1   .bss        
-     OutIndxR                                    A5       1       1       3   .bss        
-     OutIndxW                                    A6       1       1       3   .bss        
-     OutBuffer                                   A7       8       8       2   .bss        
-     OnFreeTxBuf_semaphore                       AF       1       1       5   .bss        
-     AD1_OutV                                    B0       4       4       8   .common     
-     AS1_OutLen                                  B4       1       1       6   .common     
-     CCR_reg                                     B5       1       1       2   .common     
-     CCR_lock                                    B6       1       1       5   .common     
+     flag                                        A0       2       2       1   .bss        
+     OutFlg                                      A2       1       1       4   .bss        
+     SumChan                                     A3       1       1       8   .bss        
+     ModeFlg                                     A4       1       1       6   .bss        
+     SerFlag                                     A5       1       1      11   .bss        
+     BufferRead                                  A6       1       1       1   .bss        
+     OutIndxR                                    A7       1       1       3   .bss        
+     OutIndxW                                    A8       1       1       3   .bss        
+     OutBuffer                                   A9       8       8       2   .bss        
+     OnFreeTxBuf_semaphore                       B1       1       1       5   .bss        
+     AD1_OutV                                    B2       4       4       8   .common     
+     AS1_OutLen                                  B6       1       1       6   .common     
+     CCR_reg                                     B7       1       1       2   .common     
+     CCR_lock                                    B8       1       1       5   .common     
      _SRS                                      1800       1       1       0   .abs_section_1800
      _SBDFR                                    1801       1       1       0   .abs_section_1801
      _SOPT1                                    1802       1       1       1   .abs_section_1802
@@ -1096,34 +1097,33 @@ OBJECT LIST SORTED BY ADDRESS
      _PTCTOG                                   187C       1       1       0   .abs_section_187c
      _PTETOG                                   187D       1       1       0   .abs_section_187d
      Cpu_Interrupt                             2080       4       4      26   .init       
-     Cpu_Delay100US                            2084      1C      28       1   .init       
-     _EntryPoint                               20A0      45      69       1   .init       
-     PE_low_level_init                         20E5      80     128       1   .init       
-     AS1_OnError                               2177       1       1       2   .text       
-     AS1_OnRxChar                              2178       1       1       1   .text       
-     AS1_OnTxChar                              2179       1       1       1   .text       
-     AS1_OnFreeTxBuf                           217A       1       1       1   .text       
-     TI1_OnInterrupt                           217B       1       1       1   .text       
-     AD1_OnEnd                                 217C       1       1       1   .text       
-     main                                      217D      EF     239       4   .text       
-     loadByte                                  226C       E      14       5   .text       
-     Init                                      227A      6D     109       1   .text       
-     _Startup                                  22E7       9       9       1   .text       
-     AD1_Interrupt                             22F0      52      82       1   .text       
-     ClrSumV                                   2342       9       9       1   .text       
-     AD1_HWEnDi                                234B      18      24       1   .text       
-     AD1_Measure                               2363      1E      30       1   .text       
-     AD1_GetChanValue16                        2381      30      48       2   .text       
-     AD1_Init                                  23B1      10      16       1   .text       
-     AS1_SendBlock                             23C1      A0     160       1   .text       
-     AS1_InterruptRx                           2461      43      67       1   .text       
-     AS1_InterruptTx                           24A4      5A      90       1   .text       
-     AS1_InterruptError                        24FE      11      17       1   .text       
-     AS1_Init                                  250F      2A      42       1   .text       
-     HWEnDi                                    2539       6       6       1   .text       
-     TI1_Init                                  253F       E      14       1   .text       
-     TI1_Interrupt                             254D       D      13       1   .text       
-     Channels                                  255A       2       2       2   .rodata     
+     _EntryPoint                               2084      45      69       1   .init       
+     PE_low_level_init                         20C9      80     128       1   .init       
+     AS1_OnError                               215B       1       1       2   .text       
+     AS1_OnRxChar                              215C       1       1       1   .text       
+     AS1_OnTxChar                              215D       1       1       1   .text       
+     AS1_OnFreeTxBuf                           215E       1       1       1   .text       
+     TI1_OnInterrupt                           215F       7       7       1   .text       
+     AD1_OnEnd                                 2166       1       1       1   .text       
+     main                                      2167      E9     233       4   .text       
+     loadByte                                  2250       E      14       5   .text       
+     Init                                      225E      6D     109       1   .text       
+     _Startup                                  22CB       9       9       1   .text       
+     AD1_Interrupt                             22D4      52      82       1   .text       
+     ClrSumV                                   2326       9       9       1   .text       
+     AD1_HWEnDi                                232F      18      24       1   .text       
+     AD1_Measure                               2347      1E      30       1   .text       
+     AD1_GetChanValue16                        2365      30      48       2   .text       
+     AD1_Init                                  2395      10      16       1   .text       
+     AS1_SendBlock                             23A5      A0     160       1   .text       
+     AS1_InterruptRx                           2445      43      67       1   .text       
+     AS1_InterruptTx                           2488      5A      90       1   .text       
+     AS1_InterruptError                        24E2      11      17       1   .text       
+     AS1_Init                                  24F3      2A      42       1   .text       
+     HWEnDi                                    251D       6       6       1   .text       
+     TI1_Init                                  2523       E      14       1   .text       
+     TI1_Interrupt                             2531       D      13       1   .text       
+     Channels                                  253E       2       2       2   .rodata     
      NVPROT_INIT                               FFBD       1       1       0   .abs_section_ffbd
      NVOPT_INIT                                FFBF       1       1       0   .abs_section_ffbf
      _vect                                     FFC0      40      64       0   .abs_section_ffc0
@@ -1136,13 +1136,15 @@ AD1_c.obj:
   AD1_GetValue AD1_GetValue16 
 AS1_c.obj:
   AS1_RecvChar AS1_SendChar AS1_ClearTxBuf AS1_GetCharsInRxBuf 
+Cpu_c.obj:
+  Cpu_Delay100US 
 TI1_c.obj:
   TI1_Enable 
 
 *********************************************************************************************
 COPYDOWN SECTION
 ---------------------------------------------------------------------------------------------
-------- ROM-ADDRESS: 0x255C ---- SIZE       2 ---
+------- ROM-ADDRESS: 0x2540 ---- SIZE       2 ---
 Filling bytes inserted
  0000
 
@@ -1156,8 +1158,9 @@ PE_low_level_init         USES _SCGC1 _SCGC2 _APCTL1 _PTBDD _PTBD _PTAPE
                                 _PTESE _PTFSE _PTGSE _PTHSE _PTJSE _PTADS _PTBDS 
                                 _PTCDS _PTDDS _PTEDS _PTFDS _PTGDS _PTHDS _PTJDS 
                                 AD1_Init AS1_Init TI1_Init CCR_lock 
+TI1_OnInterrupt           USES flag 
 main                      USES PE_low_level_init main AD1_Measure 
-                                AD1_GetChanValue16 _PTAD _PTDD AS1_SendBlock Cpu_Delay100US 
+                                AD1_GetChanValue16 _PTAD _PTDD AS1_SendBlock 
 Init                      USES _startupData loadByte 
 _Startup                  USES __SEG_END_SSTACK Init main 
 AD1_Interrupt             USES SumChan AD1_OutV _ADCR OutFlg AD1_OnEnd ModeFlg 
@@ -1210,8 +1213,6 @@ DEPENDENCY TREE
  |  +- AD1_GetChanValue16  
  |  |    
  |  +- AS1_SendBlock       
- |  |    
- |  +- Cpu_Delay100US      
  |       
  +- _EntryPoint         
     | 
@@ -1260,5 +1261,5 @@ STATISTIC SECTION
 ExeFile:
 --------
 Number of blocks to be downloaded: 8
-Total size of all blocks to be downloaded: 1312
+Total size of all blocks to be downloaded: 1284
 
