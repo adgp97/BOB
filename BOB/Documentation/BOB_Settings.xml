@@ -1008,7 +1008,7 @@ asm(BGND);
     <Enabled v="Y" />
     <Properties>
       <Component_name v="PTA2" />
-      <Pin_for_I_O v="PTA2_KBI1P2_SDA1_ADP2" />
+      <Pin_for_I_O v="PTA6_TPM1CH2_ADP8" />
       <Pull_resistor v="pull up" />
       <Open_drain sel_value="The settings is irrelevant for input direction">
         
@@ -1016,8 +1016,8 @@ push-pull
 
         <EmptySection_DummyValue />
       </Open_drain>
-      <Slew_rate_control_for_PTA2 v="no" />
-      <Drive_strength_for_PTA2 v="High" />
+      <Slew_rate_control_for_PTA6 v="no" />
+      <Drive_strength_for_PTA6 v="High" />
       <Direction v="Input" />
       <group name="Initialization">
         <Init__direction v="Input" />
@@ -1045,7 +1045,7 @@ push-pull
     <Enabled v="Y" />
     <Properties>
       <Component_name v="PTA3" />
-      <Pin_for_I_O v="PTA3_KBI1P3_SCL1_ADP3" />
+      <Pin_for_I_O v="PTA7_TPM2CH2_ADP9" />
       <Pull_resistor v="pull up" />
       <Open_drain sel_value="The settings is irrelevant for input direction">
         
@@ -1053,82 +1053,8 @@ push-pull
 
         <EmptySection_DummyValue />
       </Open_drain>
-      <Slew_rate_control_for_PTA3 v="no" />
-      <Drive_strength_for_PTA3 v="High" />
-      <Direction v="Input" />
-      <group name="Initialization">
-        <Init__direction v="Input" />
-        <Init__value v="0" />
-      </group>
-      <Safe_mode v="yes" />
-      <Optimization_for v="speed" />
-    </Properties>
-    <Methods>
-      <GetDir v="don&amp;apos;t generate code" />
-      <SetDir v="don&amp;apos;t generate code" />
-      <SetInput v="don&amp;apos;t generate code" />
-      <SetOutput v="don&amp;apos;t generate code" />
-      <GetVal v="generate code" />
-      <PutVal v="don&amp;apos;t generate code" />
-      <ClrVal v="don&amp;apos;t generate code" />
-      <SetVal v="don&amp;apos;t generate code" />
-      <NegVal v="don&amp;apos;t generate code" />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
-  <Bean name="PTD2" type="BitIO">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="PTD2" />
-      <Pin_for_I_O v="PTD2_KBI2P2_MISO2" />
-      <Pull_resistor v="pull up" />
-      <Open_drain sel_value="The settings is irrelevant for input direction">
-        
-push-pull
-
-        <EmptySection_DummyValue />
-      </Open_drain>
-      <Slew_rate_control_for_PTD2 v="no" />
-      <Drive_strength_for_PTD2 v="High" />
-      <Direction v="Input" />
-      <group name="Initialization">
-        <Init__direction v="Input" />
-        <Init__value v="0" />
-      </group>
-      <Safe_mode v="yes" />
-      <Optimization_for v="speed" />
-    </Properties>
-    <Methods>
-      <GetDir v="don&amp;apos;t generate code" />
-      <SetDir v="don&amp;apos;t generate code" />
-      <SetInput v="don&amp;apos;t generate code" />
-      <SetOutput v="don&amp;apos;t generate code" />
-      <GetVal v="generate code" />
-      <PutVal v="don&amp;apos;t generate code" />
-      <ClrVal v="don&amp;apos;t generate code" />
-      <SetVal v="don&amp;apos;t generate code" />
-      <NegVal v="don&amp;apos;t generate code" />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
-  <Bean name="PTD3" type="BitIO">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="PTD3" />
-      <Pin_for_I_O v="PTD3_KBI2P3_SS2" />
-      <Pull_resistor v="pull up" />
-      <Open_drain sel_value="The settings is irrelevant for input direction">
-        
-push-pull
-
-        <EmptySection_DummyValue />
-      </Open_drain>
-      <Slew_rate_control_for_PTD3 v="no" />
-      <Drive_strength_for_PTD3 v="High" />
+      <Slew_rate_control_for_PTA7 v="no" />
+      <Drive_strength_for_PTA7 v="High" />
       <Direction v="Input" />
       <group name="Initialization">
         <Init__direction v="Input" />

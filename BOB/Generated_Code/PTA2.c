@@ -6,7 +6,7 @@
 **     Component   : BitIO
 **     Version     : Component 02.086, Driver 03.27, CPU db: 3.00.067
 **     Compiler    : CodeWarrior HCS08 C Compiler
-**     Date/Time   : 2019-02-27, 20:56, # CodeGen: 16
+**     Date/Time   : 2019-03-10, 22:00, # CodeGen: 27
 **     Abstract    :
 **         This component "BitIO" implements an one-bit input/output.
 **         It uses one bit/pin of a port.
@@ -18,13 +18,13 @@
 **             ----------------------------------------------------
 **                Number (on package)  |    Name
 **             ----------------------------------------------------
-**                       60            |  PTA2_KBI1P2_SDA1_ADP2
+**                       48            |  PTA6_TPM1CH2_ADP8
 **             ----------------------------------------------------
 **
 **         Port name                   : PTA
 **
-**         Bit number (in port)        : 2
-**         Bit mask of the port        : $0004
+**         Bit number (in port)        : 6
+**         Bit mask of the port        : $0040
 **
 **         Initial direction           : Input (direction cannot be changed)
 **         Initial output value        : 0

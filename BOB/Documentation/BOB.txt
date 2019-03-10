@@ -45,16 +45,6 @@ Module "PTA3"      (component BitIO)
                 returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
                 limitations). This method cannot be disabled if direction is [input].
 
-Module "PTD2"      (component BitIO)
-   - PTD2_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
-                returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
-                limitations). This method cannot be disabled if direction is [input].
-
-Module "PTD3"      (component BitIO)
-   - PTD3_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
-                returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
-                limitations). This method cannot be disabled if direction is [input].
-
 Module "TI1"       (component TimerInt)
    - TI1_Enable -This method enables the component - it starts the timer. Events may be generated (<DisableEvent>/<EnableEvent>)
                 .

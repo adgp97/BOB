@@ -828,7 +828,7 @@ asm(BGND);
     </CompilerProperties>
   </CPU_Bean>
   <Bean name="AD1" type="ADC">
-    <Enabled v="N" />
+    <Enabled v="Y" />
     <Properties>
       <Component_name v="AD1" />
       <A_D_converter v="ADC" />
@@ -842,7 +842,7 @@ asm(BGND);
           <A_D_channel__pin_ v="PTA0_KBI1P0_TPM1CH0_ADP0_ACMP1PLUS" />
         </group>
         <group name="Channel1">
-          <A_D_channel__pin_ v="PTA2_KBI1P2_SDA1_ADP2" />
+          <A_D_channel__pin_ v="PTA1_KBI1P1_TPM2CH0_ADP1_ACMP1MINUS" />
         </group>
       </list>
       <A_D_resolution v="12 bits" />
@@ -1008,7 +1008,7 @@ asm(BGND);
     <Enabled v="Y" />
     <Properties>
       <Component_name v="PTA2" />
-      <Pin_for_I_O v="PTA2_KBI1P2_SDA1_ADP2" />
+      <Pin_for_I_O v="PTA6_TPM1CH2_ADP8" />
       <Pull_resistor v="pull up" />
       <Open_drain sel_value="The settings is irrelevant for input direction">
         
@@ -1016,8 +1016,8 @@ push-pull
 
         <EmptySection_DummyValue />
       </Open_drain>
-      <Slew_rate_control_for_PTA2 v="no" />
-      <Drive_strength_for_PTA2 v="High" />
+      <Slew_rate_control_for_PTA6 v="no" />
+      <Drive_strength_for_PTA6 v="High" />
       <Direction v="Input" />
       <group name="Initialization">
         <Init__direction v="Input" />

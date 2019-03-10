@@ -5,7 +5,7 @@
 **     Processor   : MC9S08QE128CLK
 **     Version     : Component 01.003, Driver 01.40, CPU db: 3.00.067
 **     Compiler    : CodeWarrior HCS08 C Compiler
-**     Date/Time   : 2019-02-27, 21:09, # CodeGen: 19
+**     Date/Time   : 2019-03-10, 22:07, # CodeGen: 28
 **     Abstract    :
 **         This component "MC9S08QE128_80" contains initialization 
 **         of the CPU and provides basic methods and events for 
@@ -63,8 +63,6 @@
 #include "AS1.h"
 #include "PTA2.h"
 #include "PTA3.h"
-#include "PTD2.h"
-#include "PTD3.h"
 #include "TI1.h"
 
 /*lint -save  -e950 Disable MISRA rule (1.1) checking. */

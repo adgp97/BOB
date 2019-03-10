@@ -33,8 +33,6 @@
 #include "AD1.h"
 #include "AS1.h"
 #include "PTA3.h"
-#include "PTD2.h"
-#include "PTD3.h"
 #include "TI1.h"
 #include "PTA2.h"
 /* Include shared modules, which are used for whole project */
@@ -44,13 +42,13 @@
 #include "IO_Map.h"
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
-
+int flag = 0;
 void main(void)
 {
   /* Write your local variable definition here */
 	
 	char trama[4], A[2], B[2];
-	int flag = 0;
+	
 	//bool D0 = 0,D1 = 1,D2 = 0,D3 = 1;
 	word ptr;
 
@@ -94,29 +92,19 @@ void main(void)
 	  	  
 	  	  //Adquisición de señales digitales y su inclusión en la trama
 	  	  //Canal D0
-	  	  if(PTA2_GetVal() == 0){
+	  	  
+	  	  if(PTA6_GetVal() == 0){
 	  		  trama[0] = trama[0] & 0b10111111;
-	  	  }else{
+	  	  }else {
 	  		  trama[0] = trama[0] | 0b01000000;
 	  	  }
 	  	  //Canal D1
-	  	  if(PTA3_GetVal() == 0){
+	  	  if(PTA7_GetVal() == 0){
 	  		  trama[1] = trama[1] & 0b10111111;
 	  	  }else{
 	  		  trama[1] = trama[1] | 0b01000000;
 	  	  }
-	  	  //Canal D2
-	  	  if(PTD2_GetVal() == 0){
-	  		  trama[2] = trama[2] & 0b10111111;
-	  	  }else{
-	  		  trama[2] = trama[2] | 0b01000000;
-	  	  }
-	  	  //Canal D3
-	  	  if(PTD3_GetVal() == 0){
-	  		  trama[3] = trama[3] & 0b10111111;
-	  	  }else{
-	  		  trama[3] = trama[3] | 0b01000000;
-	  	}
+	  	  
 	  
 	      AS1_SendBlock(trama,sizeof(trama),&ptr);
 	  	  //Cpu_Delay100US(10000);

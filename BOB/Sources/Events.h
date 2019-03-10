@@ -37,8 +37,6 @@
 #include "AD1.h"
 #include "AS1.h"
 #include "PTA3.h"
-#include "PTD2.h"
-#include "PTD3.h"
 #include "TI1.h"
 #include "PTA2.h"
 
