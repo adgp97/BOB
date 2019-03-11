@@ -25,12 +25,13 @@ def unframeData(frame,channel=1,digital=False):
         if not digital :
             return ((frame[0] & 0x3f) << 6 ) | (frame[1] & 0x3f)
         else: 
-            return (frame[0] & 0xb0) >> 7
+            return (frame[0] & 0x40) >> 6
+
     elif channel == 2:
         if not digital:
             return ((frame[2] & 0x3f) << 6 ) | (frame[3] & 0x3f)
         else:
-            return (frame[1] & 0xb0) >> 7
+            return (frame[1] & 0x40) >> 6
 
 
 def synchronize(dataSerial):

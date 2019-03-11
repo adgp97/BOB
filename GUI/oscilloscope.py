@@ -53,11 +53,12 @@ def timeScaleFactor(time=0):
     return 10**(-time)
 
 #show scales on graphs as an annotation
-def showDivScales(self,ch1: str,ch2: str, ch3: str, ch4: str, xpos) -> None:
-    self.axes.text(xpos,1,"channel 1: %.1f V/div" % ch1)
-    self.axes.text(xpos,0.8,"channel 2: %.1f V/div" % ch2)
-    self.axes.text(xpos,0.6,"channel 3: %.1f V/div" % ch3)
-    self.axes.text(xpos,0.4,"channel 4: %.1f V/div" % ch4)
+def showDivScales(self,ch1: str,ch2: str, ch3: str, ch4: str, xpos, timeScale ) -> None:
+    self.axes.text(xpos,1.80,"channel 1: %.1f V/div" % ch1,color='r')
+    self.axes.text(xpos,1.50,"channel 2: %.1f V/div" % ch2,color='r')
+    self.axes.text(xpos,1.15,"channel 3: %.1f V/div" % ch3, color='r')
+    self.axes.text(xpos,0.8,"channel 4: %.1f V/div" % ch4, color='r')
+    self.axes.text(xpos,0.45,"time scale: %.1f s/div" % timeScale, color='r')
 
 class MplCanvas(FigureCanvas):
     #this is a canvas which inherits from FigureCanvas
@@ -78,7 +79,11 @@ class MplCanvas(FigureCanvas):
         self.axes.set_xticklabels([])
         ########################
         # add a grid as require for the project 
-        self.axes.grid()
+        
+        self.axes.grid(b=True,which='major',color='k',linestyle='-')
+        self.axes.minorticks_on()
+        self.axes.grid(b=True,which='minor',linestyle='--')
+        
         #new canvas object to embed the figure of matplotlib in PyQt5
         self.canvas = FigureCanvas(self.fig)
         self.canvas.setParent(parent) #really important to do this for the gui to show image
@@ -104,16 +109,16 @@ class MplCanvas(FigureCanvas):
         
     #based function for calling update_figure with parameters given 
     #by the gui 
-    def plot(self,ch1=0, ch2=0, ch3=0, ch4=0,time=0):
+    def plot(self,enabledChannels,ch1=0, ch2=0, ch3=0, ch4=0,time=0):
         def _plot():
-            self.update_figure(ch1,ch2,ch3,ch4,time)
+            self.update_figure(enabledChannels,ch1,ch2,ch3,ch4,time)
         return _plot
     #this function is the graphing and update function of the system.
     #this receive data from the proper sliders and makes corrections to
     #the graph in order to correctly show the information received by 
     #the microprocessor 
 
-    def update_figure(self,ch1=0, ch2=0, ch3=0, ch4=0, time=0):
+    def update_figure(self,enableCh=[False for i in range(4)],ch1=0, ch2=0, ch3=0, ch4=0, time=0):
         #clear graph in order to create a new one
         self.axes.clear()
         #empty array to receive data from DEM0QE
@@ -139,6 +144,7 @@ class MplCanvas(FigureCanvas):
             while i < 300:
                 #receive data from DEM0QE
                 data = startReceiving(self.dataSerial)
+                
                 #pop data from first element in order to add new ones
                 self.channelA1.pop(0)
                 self.channelA2.pop(0)
@@ -150,7 +156,6 @@ class MplCanvas(FigureCanvas):
                 self.channelA2.append(scaleYAxis(ch2)*convertAnalog(data[1]))
                 self.channelD1.append(scaleYAxis(ch3)*convertDigital(data[2]))
                 self.channelD2.append(scaleYAxis(ch4)*convertDigital(data[3]))
-                #print(self.channelD2)
                 i = i + 1
 
         #calculate proper time per division scale 
@@ -161,10 +166,77 @@ class MplCanvas(FigureCanvas):
         self.xticks = np.linspace(0,xlim[1],10)
         
         #plot graph. Slicing is done in order to adjust x's axis. 
-        self.axes.plot(self.timescale[0:ts],self.channelA1[0:ts], self.channelA2[0:ts])
-        self.axes.plot(self.timescale[0:ts],self.channelD1[0:ts], self.channelD2[0:ts])
+        if enableCh == [False, False, False, False]:
+            pass
+        elif enableCh == [True, True, True, True]:
+            self.axes.plot(self.timescale[0:ts],self.channelA1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelA2[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD2[0:ts], color='k')
+        # one case scenerios
+        elif enableCh == [True, True, True, False]:
+            self.axes.plot(self.timescale[0:ts],self.channelA1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelA2[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD1[0:ts], color='k')
+            
+        elif enableCh == [True, True, False, True]:
+            self.axes.plot(self.timescale[0:ts],self.channelA1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelA2[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD2[0:ts], color='k')
+        elif enableCh == [True, False, True, True]: 
+            self.axes.plot(self.timescale[0:ts],self.channelA1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD2[0:ts], color='k')
+        elif enableCh == [False, True, True, True]:
+            self.axes.plot(self.timescale[0:ts], self.channelA2[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD2[0:ts], color='k')
+        #######################################################################################
+
+        # two's cases 
+        elif enableCh == [True, True, False, False]:
+            self.axes.plot(self.timescale[0:ts],self.channelA1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts],self.channelA2[0:ts], color='k')
+        elif enableCh == [True, False, False, True]:
+            self.axes.plot(self.timescale[0:ts],self.channelA1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD2[0:ts], color='k')
+        elif enableCh == [False, False, True, True]:
+            self.axes.plot(self.timescale[0:ts], self.channelD1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD2[0:ts], color='k')
+        ########################################################################################
+
+        # three's cases 
+        elif enableCh == [False, False, False, True]: 
+            self.axes.plot(self.timescale[0:ts],self.channelD2[0:ts], color='k')
+        elif enableCh == [True, False, False, False]:
+            self.axes.plot(self.timescale[0:ts],self.channelA1[0:ts], color='k')
+        #########################################################################################
+        ## two's cases separated
+        elif enableCh == [True, False, True, False]:
+            self.axes.plot(self.timescale[0:ts],self.channelA1[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD1[0:ts], color='k')
+        elif enableCh == [False, True, False, True]:
+            self.axes.plot(self.timescale[0:ts], self.channelA2[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD2[0:ts], color='k')
+        elif enableCh == [False, True, True, False]:
+            self.axes.plot(self.timescale[0:ts], self.channelA2[0:ts], color='k')
+            self.axes.plot(self.timescale[0:ts], self.channelD1[0:ts], color='k')
+            
+        ###########################################################################################
+
+        elif enableCh == [False, False, False, True]:
+            self.axes.plot(self.timescale[0:ts],self.channelD2[0:ts], color='k')
+        elif enableCh == [False, False, True, False]:
+            self.axes.plot(self.timescale[0:ts],self.channelD1[0:ts], color='k')
+        elif enableCh == [False, True, False, False]:
+            self.axes.plot(self.timescale[0:ts],self.channelA2[0:ts], color='k')
+        elif enableCh == [True, False, False, False]:
+            self.axes.plot(self.timescale[0:ts],self.channelA1[0:ts], color='k')
+        else:
+            pass
+        #self.axes.plot(self.timescale[0:ts],self.channelD1[0:ts], self.channelD2[0:ts])
         #this commands adds an annotation to show scale of every channel
-        showDivScales(self,showScale(ch1),showScale(ch2), showScale(ch3), showScale(ch4), 0.7*xlim[1])
+        showDivScales(self,showScale(ch1),showScale(ch2), showScale(ch3), showScale(ch4), 0.68*xlim[1], timeScaleFactor(time))
         #set ticks interval for axis
         self.axes.xaxis.set_ticks(self.xticks)
         self.axes.yaxis.set_ticks(self.yticks)
@@ -174,7 +246,9 @@ class MplCanvas(FigureCanvas):
         self.axes.set_xticklabels([])
         self.axes.set_yticklabels([])
         #show grid requiered 
-        self.axes.grid()
+        self.axes.grid(b=True,which='major',color='k',linestyle='-')
+        self.axes.minorticks_on()
+        self.axes.grid(b=True,which='minor',linestyle='--')
         #draw everything to the canvas 
         self.canvas.draw()
 
@@ -239,6 +313,9 @@ class Window(QMainWindow):
         #timer configuration for refreshing graph
         self.timer = None
 
+
+        self.enabledChannels = [False for i in range(4)]
+
         #window config
         self.title = "Demoqe Project"
         self.top = 100
@@ -273,6 +350,11 @@ class Window(QMainWindow):
         self.channelA1.setTickInterval(1)
         self.channelA1.valueChanged.connect(self.sliderChangedValue)
 
+        self.chA1checkBox = QCheckBox("",self)
+        self.chA1checkBox.stateChanged.connect(self.enableChannel(self.chA1checkBox,0))
+        self.chA1checkBox.move(950,92)
+        self.chA1checkBox.resize(40,40) 
+
         #slider for channel 2
         self.text = QLabel("Channel 2", self)
         self.text.move(800,125)
@@ -284,6 +366,11 @@ class Window(QMainWindow):
         self.channelA2.setTickPosition(QSlider.TicksAbove)
         self.channelA2.setTickInterval(1)
         self.channelA2.valueChanged.connect(self.sliderChangedValue)
+
+        self.chA2checkBox = QCheckBox("",self)
+        self.chA2checkBox.stateChanged.connect(self.enableChannel(self.chA2checkBox,1))
+        self.chA2checkBox.move(950,142)
+        self.chA2checkBox.resize(40,40) 
 
         #digital channel 1 slider config
         self.text = QLabel("Channel 3", self)
@@ -297,6 +384,11 @@ class Window(QMainWindow):
         self.channelD1.setTickInterval(1)
         self.channelD1.valueChanged.connect(self.sliderChangedValue)
 
+        self.chD1checkBox = QCheckBox("",self)
+        self.chD1checkBox.stateChanged.connect(self.enableChannel(self.chD1checkBox,2))
+        self.chD1checkBox.move(950,192)
+        self.chD1checkBox.resize(40,40) 
+
         #digital channel 2 slider config 
         self.text = QLabel("Channel 4", self)
         self.text.move(800,225)
@@ -309,6 +401,10 @@ class Window(QMainWindow):
         self.channelD2.setTickInterval(1)
         self.channelD2.valueChanged.connect(self.sliderChangedValue)
 
+        self.chD2checkBox = QCheckBox("",self)
+        self.chD2checkBox.stateChanged.connect(self.enableChannel(self.chD2checkBox,3))
+        self.chD2checkBox.move(950,242)
+        self.chD2checkBox.resize(40,40) 
 
         #time per division slider 
         self.text = QLabel("Time Division", self)
@@ -342,8 +438,21 @@ class Window(QMainWindow):
         channelD1 = self.channelD1.value()
         channelD2 = self.channelD2.value()
         time      = self.time.value()
-        self.plot(channelA1,channelA2,channelD1,channelD2,time) 
+        self.plot(self.enabledChannels,channelA1,channelA2,channelD1,channelD2,time) 
 
+    def enableChannel(self,channelObj,channel):
+        def __enableChannel():
+            channelA1 = self.channelA1.value()
+            channelA2 = self.channelA2.value()
+            channelD1 = self.channelD1.value()
+            channelD2 = self.channelD2.value()
+            time      = self.time.value()
+            self.enabledChannels[channel] = channelObj.isChecked()       
+            self.plot(self.enabledChannels, channelA1, channelA2, channelD1, channelD2)
+        
+        return __enableChannel
+        
+    
     
 
     def __plot(self,option=1):
@@ -354,19 +463,19 @@ class Window(QMainWindow):
                 channelD1 = self.channelD1.value()
                 channelD2 = self.channelD2.value()
                 time      = self.time.value()
-                self.plot(channelA1,channelA2,channelD1,channelD2,time)
+                self.plot(self.enabledChannels,channelA1,channelA2,channelD1,channelD2,time)
 
         return ___plot
 
 
-    def plot(self,chA1=0, chA2=0, chD1=0, chD2=0, time=0):
+    def plot(self,enabledChannels=[False for i in range(4)], chA1=0, chA2=0, chD1=0, chD2=0, time=0):
         
         #if timer is running stop and restart a new one
         if self.timer: 
             self.timer.stop()
             self.timer.deleteLater()
         self.timer = QtCore.QTimer(self)
-        self.timer.timeout.connect(self.canvas.plot(chA1,chA2,chD1,chD2,time))
+        self.timer.timeout.connect(self.canvas.plot(enabledChannels, chA1,chA2,chD1,chD2,time))
         self.timer.start(2.5) 
         #as 60Hz, indicates a 1/60 s or 16.6ms refreshing time. 
         #As we are partly refresshing the graph. Only 15% 
