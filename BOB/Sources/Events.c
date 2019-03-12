@@ -32,6 +32,7 @@
 #include "Events.h"
 
 extern flag;
+int flag2 = 0;
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
@@ -125,7 +126,18 @@ void  AS1_OnFreeTxBuf(void)
 void TI1_OnInterrupt(void)
 {
   /* Write your code here ... */
+	
 	flag = 1;
+	
+	//LED parpadeante 
+	//Su cambio de estado indica que se ha realizado muestreo de las señales
+	if(flag2 != 0){
+		LED_SetVal();
+		flag2 = 0;
+	}else {
+		LED_ClrVal();
+		flag2 = 1;
+	}
 }
 
 /*

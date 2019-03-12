@@ -6,7 +6,7 @@
 **     Component   : TimerInt
 **     Version     : Component 02.161, Driver 01.23, CPU db: 3.00.067
 **     Compiler    : CodeWarrior HCS08 C Compiler
-**     Date/Time   : 2019-02-27, 20:56, # CodeGen: 16
+**     Date/Time   : 2019-03-12, 00:41, # CodeGen: 38
 **     Abstract    :
 **         This component "TimerInt" implements a periodic interrupt.
 **         When the component and its events are enabled, the "OnInterrupt"
@@ -46,7 +46,7 @@
 **
 **         Flip-flop registers
 **     Contents    :
-**         Enable - byte TI1_Enable(void);
+**         No public methods
 **
 **     Copyright : 1997 - 2014 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -106,22 +106,6 @@
 #include "PE_Const.h"
 #include "IO_Map.h"
 #include "Cpu.h"
-
-byte TI1_Enable(void);
-/*
-** ===================================================================
-**     Method      :  TI1_Enable (component TimerInt)
-**     Description :
-**         This method enables the component - it starts the timer.
-**         Events may be generated (<DisableEvent>/<EnableEvent>).
-**     Parameters  : None
-**     Returns     :
-**         ---             - Error code, possible codes:
-**                           ERR_OK - OK
-**                           ERR_SPEED - This device does not work in
-**                           the active speed mode
-** ===================================================================
-*/
 
 __interrupt void TI1_Interrupt(void);
 /*

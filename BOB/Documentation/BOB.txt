@@ -35,19 +35,30 @@ Module "AS1"       (component AsynchroSerial)
    - AS1_GetCharsInTxBuf -Returns the number of characters in the output buffer. This method is available only if the 
                 transmitter property is enabled.
 
-Module "PTA2"      (component BitIO)
-   - PTA2_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
+Module "PTA6"      (component BitIO)
+   - PTA6_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
                 returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
                 limitations). This method cannot be disabled if direction is [input].
 
-Module "PTA3"      (component BitIO)
-   - PTA3_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
+Module "PTA7"      (component BitIO)
+   - PTA7_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
                 returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
                 limitations). This method cannot be disabled if direction is [input].
 
 Module "TI1"       (component TimerInt)
-   - TI1_Enable -This method enables the component - it starts the timer. Events may be generated (<DisableEvent>/<EnableEvent>)
-                .
+
+Module "LED"       (component BitIO)
+   - LED_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
+                returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
+                limitations). This method cannot be disabled if direction is [input].
+   - LED_PutVal -The specified output value is set. If the direction is [input], the component saves the value to a memory or a 
+                register and this value will be written to the pin after switching to the output mode (using [SetDir(TRUE)]; 
+                see <Safe mode> property for limitations). If the direction is [output], it writes the value to the pin. 
+                (Method is available only if the direction = _[output]_ or _[input/output]_).
+   - LED_ClrVal -Clears (set to zero) the output value. It is equivalent to the [PutVal(FALSE)]. This method is available only 
+                if the direction = _[output]_ or _[input/output]_.
+   - LED_SetVal -Sets (to one) the output value. It is equivalent to the [PutVal(TRUE)]. This method is available only if the 
+                direction = _[output]_ or _[input/output]_.
 
 Module "Cpu"       (component MC9S08QE128_80)
    - Cpu_EnableInt -Enables maskable interrupts

@@ -36,9 +36,10 @@
 #include "IO_Map.h"
 #include "AD1.h"
 #include "AS1.h"
-#include "PTA3.h"
+#include "PTA7.h"
 #include "TI1.h"
-#include "PTA2.h"
+#include "LED.h"
+#include "PTA6.h"
 
 
 void AS1_OnError(void);

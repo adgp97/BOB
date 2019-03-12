@@ -7,7 +7,7 @@
 **     Version     : Component 01.003, Driver 01.40, CPU db: 3.00.067
 **     Datasheet   : MC9S08QE128RM Rev. 2 6/2007
 **     Compiler    : CodeWarrior HCS08 C Compiler
-**     Date/Time   : 2019-03-10, 22:07, # CodeGen: 28
+**     Date/Time   : 2019-03-12, 00:41, # CodeGen: 38
 **     Abstract    :
 **         This component "MC9S08QE128_80" contains initialization 
 **         of the CPU and provides basic methods and events for 
@@ -69,9 +69,10 @@
 
 #include "AD1.h"
 #include "AS1.h"
-#include "PTA2.h"
-#include "PTA3.h"
+#include "PTA6.h"
+#include "PTA7.h"
 #include "TI1.h"
+#include "LED.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -280,6 +281,12 @@ void PE_low_level_init(void)
   setReg8Bits(PTAPE, 0xC0U);            
   /* PTADD: PTADD7=0,PTADD6=0 */
   clrReg8Bits(PTADD, 0xC0U);            
+  /* PTCD: PTCD0=0 */
+  clrReg8Bits(PTCD, 0x01U);             
+  /* PTCPE: PTCPE0=0 */
+  clrReg8Bits(PTCPE, 0x01U);            
+  /* PTCDD: PTCDD0=1 */
+  setReg8Bits(PTCDD, 0x01U);            
   /* PTASE: PTASE7=0,PTASE6=0,PTASE4=0,PTASE3=0,PTASE2=0,PTASE1=0,PTASE0=0 */
   clrReg8Bits(PTASE, 0xDFU);            
   /* PTBSE: PTBSE7=0,PTBSE6=0,PTBSE5=0,PTBSE4=0,PTBSE3=0,PTBSE2=0,PTBSE1=0,PTBSE0=0 */
@@ -321,10 +328,11 @@ void PE_low_level_init(void)
   AD1_Init();
   /* ### Asynchro serial "AS1" init code ... */
   AS1_Init();
-  /* ### BitIO "PTA2" init code ... */
-  /* ### BitIO "PTA3" init code ... */
+  /* ### BitIO "PTA6" init code ... */
+  /* ### BitIO "PTA7" init code ... */
   /* ### TimerInt "TI1" init code ... */
   TI1_Init();
+  /* ### BitIO "LED" init code ... */
   CCR_lock = (byte)0;
   __EI();                              /* Enable interrupts */
 }

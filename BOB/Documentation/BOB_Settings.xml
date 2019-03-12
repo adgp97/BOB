@@ -1004,10 +1004,10 @@ asm(BGND);
       <event name="OnRxActiveEdge" v="don&amp;apos;t generate code" />
     </Events>
   </Bean>
-  <Bean name="PTA2" type="BitIO">
+  <Bean name="PTA6" type="BitIO">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="PTA2" />
+      <Component_name v="PTA6" />
       <Pin_for_I_O v="PTA6_TPM1CH2_ADP8" />
       <Pull_resistor v="pull up" />
       <Open_drain sel_value="The settings is irrelevant for input direction">
@@ -1041,10 +1041,10 @@ push-pull
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="PTA3" type="BitIO">
+  <Bean name="PTA7" type="BitIO">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="PTA3" />
+      <Component_name v="PTA7" />
       <Pin_for_I_O v="PTA7_TPM2CH2_ADP9" />
       <Pull_resistor v="pull up" />
       <Open_drain sel_value="The settings is irrelevant for input direction">
@@ -1102,7 +1102,7 @@ push-pull
       </group>
     </Properties>
     <Methods>
-      <Enable v="generate code" />
+      <Enable v="don&amp;apos;t generate code" />
       <Disable v="don&amp;apos;t generate code" />
       <EnableEvent v="don&amp;apos;t generate code" />
       <DisableEvent v="don&amp;apos;t generate code" />
@@ -1125,6 +1125,43 @@ push-pull
         <Event_procedure_name v="TI1_OnInterrupt" />
         <Priority v="same as interrupt" />
       </event>
+    </Events>
+  </Bean>
+  <Bean name="LED" type="BitIO">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="LED" />
+      <Pin_for_I_O v="PTC0_TPM3CH0" />
+      <Pull_resistor sel_value="no pull resistor">
+        
+autoselected pull
+
+        <EmptySection_DummyValue />
+      </Pull_resistor>
+      <Open_drain v="push-pull" />
+      <Slew_rate_control_for_PTC0 v="no" />
+      <Drive_strength_for_PTC0 v="High" />
+      <Direction v="Output" />
+      <group name="Initialization">
+        <Init__direction v="Output" />
+        <Init__value v="0" />
+      </group>
+      <Safe_mode v="yes" />
+      <Optimization_for v="speed" />
+    </Properties>
+    <Methods>
+      <GetDir v="don&amp;apos;t generate code" />
+      <SetDir v="don&amp;apos;t generate code" />
+      <SetInput v="don&amp;apos;t generate code" />
+      <SetOutput v="don&amp;apos;t generate code" />
+      <GetVal v="generate code" />
+      <PutVal v="generate code" />
+      <ClrVal v="generate code" />
+      <SetVal v="generate code" />
+      <NegVal v="don&amp;apos;t generate code" />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
     </Events>
   </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>

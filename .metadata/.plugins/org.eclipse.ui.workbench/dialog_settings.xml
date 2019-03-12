@@ -16,4 +16,10 @@
 			<item value="1"/>
 		</list>
 	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+		<item value="374" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>
