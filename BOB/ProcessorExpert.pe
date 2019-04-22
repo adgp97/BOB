@@ -3,8 +3,8 @@
   <Header>
     <Name>BOB</Name>
     <SavedBy>adgp97</SavedBy>
-    <ModificationStamp>23</ModificationStamp>
-    <Date>2019-03-12</Date>
+    <ModificationStamp>24</ModificationStamp>
+    <Date>2019-04-21</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.9.0.RT6_b1411-0406</PEversion>
   </Header>
@@ -12595,12 +12595,12 @@
         <ItemSymbol>_Cmp</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>RTCmod</Value>
+        <Value>TPM10</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
         <ItemSymbol>Tmr</ItemSymbol>
-        <Value>RTC</Value>
+        <Value>TPM1</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -12611,7 +12611,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>CmpInt</ItemSymbol>
-        <Value>Vrtc</Value>
+        <Value>Vtpm1ch0</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>CmpInitPriority</ItemSymbol>

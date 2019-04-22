@@ -6,7 +6,7 @@
 **     Component   : TimerInt
 **     Version     : Component 02.161, Driver 01.23, CPU db: 3.00.067
 **     Compiler    : CodeWarrior HCS08 C Compiler
-**     Date/Time   : 2019-03-12, 00:41, # CodeGen: 38
+**     Date/Time   : 2019-04-21, 21:44, # CodeGen: 39
 **     Abstract    :
 **         This component "TimerInt" implements a periodic interrupt.
 **         When the component and its events are enabled, the "OnInterrupt"
@@ -15,18 +15,19 @@
 **         The source of periodic interrupt can be timer compare or reload
 **         register or timer-overflow interrupt (of free running counter).
 **     Settings    :
-**         Timer name                  : RTC (8-bit)
-**         Compare name                : RTCmod
+**         Timer name                  : TPM1 (16-bit)
+**         Compare name                : TPM10
 **         Counter shared              : No
 **
 **         High speed mode
 **             Prescaler               : divide-by-1
-**             Clock                   : 32768 Hz
+**             Clock                   : 7471104 Hz
 **           Initial period/frequency
 **             Xtal ticks              : 16
-**             microseconds            : 488
-**             seconds (real)          : 0.00048828125
-**             Hz                      : 2048
+**             microseconds            : 500
+**             milliseconds            : 1
+**             seconds (real)          : 0.000500059964
+**             Hz                      : 2000
 **             kHz                     : 2
 **
 **         Runtime setting             : none
@@ -36,15 +37,16 @@
 **              Events                 : Enabled
 **
 **         Timer registers
-**              Counter                : RTCCNT    [$1831]
-**              Mode                   : RTCSC     [$1830]
-**              Run                    : RTCSC     [$1830]
-**              Prescaler              : RTCSC     [$1830]
+**              Counter                : TPM1CNT   [$0041]
+**              Mode                   : TPM1SC    [$0040]
+**              Run                    : TPM1SC    [$0040]
+**              Prescaler              : TPM1SC    [$0040]
 **
 **         Compare registers
-**              Compare                : RTCMOD    [$1832]
+**              Compare                : TPM1C0V   [$0046]
 **
 **         Flip-flop registers
+**              Mode                   : TPM1C0SC  [$0045]
 **     Contents    :
 **         No public methods
 **

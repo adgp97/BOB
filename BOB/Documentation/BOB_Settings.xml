@@ -1082,10 +1082,10 @@ push-pull
     <Enabled v="Y" />
     <Properties>
       <Component_name v="TI1" />
-      <Periodic_interrupt_source v="RTCmod" />
-      <Counter v="RTC" />
+      <Periodic_interrupt_source v="TPM10" />
+      <Counter v="TPM1" />
       <boolgroup name="Interrupt service/event" v="Enabled">
-        <Interrupt v="Vrtc" />
+        <Interrupt v="Vtpm1ch0" />
         <Interrupt_priority v="medium priority" />
       </boolgroup>
       <Interrupt_period v="0.5 ms" />
